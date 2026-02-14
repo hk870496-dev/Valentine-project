@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hamza ❤️ Warisha</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      background: linear-gradient(to right, #ff9a9e, #fecfef);
+    }
+
+    h1 {
+      color: #ff1a4d;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    button {
+      font-size: 22px;
+      padding: 12px 25px;
+      margin: 15px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #yesBtn {
+      background-color: #ff1a4d;
+      color: white;
+    }
+
+    #noBtn {
+      background-color: grey;
+      color: white;
+      position: absolute;
+    }
+
+    #result {
+      font-size: 26px;
+      color: #ff1a4d;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Warisha ❤️</h1>
+
+<h2>From the moment I met you, my life changed</h2>
+<h2>You make my world beautiful 💖</h2>
+<h2>Will you be my Valentine, Warisha? 🌹</h2>
+
+<button id="yesBtn" onclick="yesClicked()">Yes ❤️</button>
+<button id="noBtn" onmouseover="moveButton()">No 😢</button>
+
+<h2 id="result"></h2>
+
+<script>
+function yesClicked() {
+  document.getElementById("result").innerHTML =
+  "I love you, Warisha ❤️ You made Hamza the happiest person alive 💖";
+}
+
+function moveButton() {
+  var button = document.getElementById("noBtn");
+  button.style.top = Math.random() * 400 + "px";
+  button.style.left = Math.random() * 400 + "px";
+}
+</script>
+
+</body>
+</html>
